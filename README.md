@@ -1,15 +1,12 @@
-# Courses@CRG_course_nextflow_May_2022
+# CRG_course_nextflow_Jun_2022
 
-Reproducible research and data analysis using Containers & Nextflow
-
-* [Course page](https://www.crg.eu/en/event/coursescrg-reproducible-research-and-data-analysis-using-containers-nextflow-2022)
-* [Course materials](https://biocorecrg.github.io/CoursesCRG_Containers_Nextflow_May_2022)
+Reproducible research and data analysis using Nextflow
 
 
 
 ## About the course
 
-This slow-paced hands-on course is designed for absolute beginners who want to start using Linux Containers ([Docker](https://www.docker.com/) and [Singularity](https://www.apptainer.org/)) and [Nextflow](https://www.nextflow.io) to achieve reproducibility of data analysis. 
+This slow-paced hands-on course is designed for absolute beginners who want to start using [Nextflow](https://www.nextflow.io) to achieve reproducibility of data analysis. 
 
 ### Outline
 
@@ -17,16 +14,11 @@ The course will train participants to build Nextflow pipelines and run them with
 
 It is designed to provide trainees with short and frequent hands-on sessions, while keeping theoretical sessions to a minimum.
 
-The course will be fully virtual via the [Zoom](https://zoom.us/) platform.
-
 <!--Trainees will work in a dedicated [AWS environment](https://en.wikipedia.org/wiki/AWS).-->
 
 
 ### Learning objectives
 
-* Locate and fetch Docker/Singularity images from dedicated repositories.
-* Execute/Run a Docker/Singularity container from the command line.
-* Locate and fetch Nextflow pipelines from dedicated repositories.
 * Execute/Run a Nextflow pipeline.
 * Describe and explain Nextflow basic concepts.
 * Test and modify a Nextflow pipeline.
@@ -47,6 +39,9 @@ https://wiki.gentoo.org/wiki/Nano/Basics_Guide
 
 Having a [GitHub account](https://github.com/join) is recommended. 
 
+Knowing concepts about Linux containers is recommended. 
+
+
 ## Dates, time, location
 
 * Dates: 30th May until 3rd June 2022 and additionaly 7th of June 2022. Time: 9:30 - 13:30h (CET)
@@ -54,38 +49,26 @@ Having a [GitHub account](https://github.com/join) is recommended.
 * Location: virtual, via Zoom.
 
 ## Program
- 
-### Day 1: Introduction to Linux containers, Docker (May 30)
-
-* 09:30-11:00 Introduction to containers and Docker
-* 11:00-11:30 Break
-* 11:30-13:00 Docker
-
-### Day 2: Docker and Singularity (May 31)
-
-* 09:30-11:00 More advanced Docker
-* 11:00-11:30 Coffee break
-* 11:30-13:30 Singularity
-
-### Day 3: Understand and run a basic Nexflow pipeline (June 1)
+  
+### Day 1: Understand and run a basic Nexflow pipeline (June 30)
 
 * 09:30-11:00 Introduction to Nextflow
 * 11:00-11:30 Coffee break
 * 11:30-13:30 Making simple scripts
 
-### Day 4: Write, modify and run a complex pipeline (June 2)
+### Day 1: Write, modify and run a complex pipeline (Jun 30)
 
 * 09:30-11:00 Decoupling params, resources and main script
 * 11:00-11:30 Coffee break
 * 11:30-13:30 Using public pipelines
 
-### Day 5: Run a Nextflow pipeline in different environments, share and report (June 3)
+### Day 2: Run a Nextflow pipeline in different environments, share and report (Jul 1)
 
 * 09:30-11:00 Profiles and cloud
 * 11:00-11:30 Coffee break
 * 11:30-13:30 Modules and Tower
 
-### Day 6: nf-core (June 7)
+### Day 2: nf-core (Jul 1)
 
 * 09:30-10:30 Introduction to nf-core (TBC)
 * 10:30-11:00 nf-core for users I (TBC)
@@ -96,4 +79,3 @@ Having a [GitHub account](https://github.com/join) is recommended.
 ## Acknowledgements
 
 * [Sphinx](https://www.sphinx-doc.org/). The publication system for our course pages.
-* [ELIXIR Workshop Hackathon](https://github.com/vibbits/containers-workflow-hackathon). Joined initiative with other colleagues to exchange materials for courses and approaches for courses like this.
