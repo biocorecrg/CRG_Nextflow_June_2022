@@ -115,9 +115,9 @@ Day 1: Understand and run a basic Nexflow pipeline (June 30)
 Day 1: Write, modify and run a complex pipeline (Jun 30)
 -------------
 
-* 14:30-15:30 Decoupling params, resources and main script
+* 14:30-15:30 More complex scripts
 * 15:30-16:00 Coffee break
-* 16:00-17:00 Profiles and cloud
+* 16:00-17:00 Decoupling params, resources and main script
 
 .. _home-page-day3:
 
