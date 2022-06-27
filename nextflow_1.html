@@ -51,7 +51,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#nextflow-main-concepts">Nextflow main concepts.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#nextflow-main-concepts">Nextflow main concepts</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#channels-and-operators">Channels and Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#exercise">Exercise</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#processes">Processes</a></li>
@@ -153,7 +153,7 @@ For each process <strong>a temporary folder is created and is cached (or not) on
 The <strong>processes</strong> are blocks of code that can be executed - such as scripts or programs - while the <strong>channels</strong> are asynchronous queues able to <strong>connect processes among them via input / output</strong>.</p>
 <a class="reference internal image-reference" href="_images/wf_example.png"><img alt="_images/wf_example.png" src="_images/wf_example.png" style="width: 600px;" /></a>
 <p>Processes are independent from each another and can be run in parallel, depending on the number of elements in a channel.
-In the previous example, processes <strong>A</strong>, <strong>B</strong> and <strong>C</strong> can be run in parallel and only when they <strong>ALL</strong> end the process <strong>D</strong> is triggered.</p>
+In the previous example, processes <strong>A</strong>, <strong>B</strong> and <strong>C</strong> can be run in parallel and only when they <strong>ALL</strong> end the process <strong>D</strong> is triggered. As you can see an operator is used for collecting or reshaping the output channels for generating a new one that is then consumed by the process <strong>D</strong>.</p>
 </section>
 <section id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading"></a></h3>
@@ -189,11 +189,11 @@ You need at least the Java version 8 for the Nextflow installation.</p>
 <span class="go">Hola world!</span>
 </pre></div>
 </div>
-<p>This command downloads and runs the pipeline <code class="docutils literal notranslate"><span class="pre">hello</span></code>.</p>
+<p>This command downloads and runs the pipeline <code class="docutils literal notranslate"><span class="pre">hello</span></code> from the Nextflow official GitHub repository.</p>
 </section>
 </section>
 <section id="nextflow-main-concepts">
-<h2>Nextflow main concepts.<a class="headerlink" href="#nextflow-main-concepts" title="Permalink to this heading"></a></h2>
+<h2>Nextflow main concepts<a class="headerlink" href="#nextflow-main-concepts" title="Permalink to this heading"></a></h2>
 <section id="channels-and-operators">
 <h3>Channels and Operators<a class="headerlink" href="#channels-and-operators" title="Permalink to this heading"></a></h3>
 <p>There are two different types of channels:</p>

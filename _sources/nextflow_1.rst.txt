@@ -91,7 +91,7 @@ The **processes** are blocks of code that can be executed - such as scripts or p
 
 
 Processes are independent from each another and can be run in parallel, depending on the number of elements in a channel.
-In the previous example, processes **A**, **B** and **C** can be run in parallel and only when they **ALL** end the process **D** is triggered.
+In the previous example, processes **A**, **B** and **C** can be run in parallel and only when they **ALL** end the process **D** is triggered. As you can see an operator is used for collecting or reshaping the output channels for generating a new one that is then consumed by the process **D**. 
 
 Installation
 ------------
@@ -129,10 +129,10 @@ We can test that the installation was successful with:
   Hola world!
 
 
-This command downloads and runs the pipeline ``hello``.
+This command downloads and runs the pipeline ``hello`` from the Nextflow official GitHub repository.
 
 
-Nextflow main concepts.
+Nextflow main concepts
 ========================
 
 Channels and Operators
