@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Courses@CRG: Reproducible research and data analysis using Containers & Nextflow 2022'
+project = u'Courses@CRG: Nextflow June 2022'
 
 # -- General configuration ---------------------------------------------------
 
@@ -62,6 +62,6 @@ html_theme = 'sphinx_rtd_theme'
 
 # The URL which points to the root of the HTML documentation.
 # It is used to indicate the location of document like canonical_url
-html_baseurl = 'https://biocorecrg.github.io/CoursesCRG_Containers_Nextflow_May_2022/'
+html_baseurl = 'https://biocorecrg.github.io/CRG_Nextflow_Jun_2022/'
 
 # html_logo = html_favicon = '_images/sphinx-notes.png'
