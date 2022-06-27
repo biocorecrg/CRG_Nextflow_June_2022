@@ -61,7 +61,7 @@ workflow flow2 {
 }
 
 workflow {
-       splitted_seq        = splitSequences(sequences_file)
+   splitted_seq        = splitSequences(sequences_file)
    flow1(splitted_seq)
    flow2(splitted_seq)
 }
