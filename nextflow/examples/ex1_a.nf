@@ -12,8 +12,6 @@ str = Channel.from('hello', 'hola', 'bonjour')
  */
 
 process printHello {
-    // this is for displaying the content of `str_in` in the log file
-    tag { "${str_in}" } 
 
     input:
     val str_in
