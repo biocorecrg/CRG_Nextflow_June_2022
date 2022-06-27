@@ -101,19 +101,6 @@ Suggested program
 ============
 
 
-
-### 
-
-
-### Day 2: Nextflow modules and Tower
-* 14:30-15:30 Modules
-* 15:30-16:00 Coffee break
-* 16:00-17:00 Tower
-
-
-
-
-
 .. _home-page-day1:
 
 Day 1: Understand and run a basic Nexflow pipeline (June 30)
