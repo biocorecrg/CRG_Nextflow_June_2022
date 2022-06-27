@@ -3,13 +3,13 @@
 nextflow.enable.dsl=2
 
 // this can be overridden by using --inputfile OTHERFILENAME
-params.inputfile = "$baseDir/testdata/test.fa"
+params.inputfile = "$baseDir/../../testdata/test.fa"
 
 // the "file method" returns a file system object given a file path string
 sequences_file = file(params.inputfile)
 
 // check if the file exists
-if( !sequences_file.exists() ) exit 1, "Missing genome file: ${genome_file}"
+if( !sequences_file.exists() ) exit 1, "Missing genome file: ${inputfile}"
 
 /*
  * Process 1 for splitting a fasta file in multiple files
@@ -33,8 +33,6 @@ process splitSequences {
  */
 process reverseSequence {
     tag { "${seq}" }
-
-	  publishDir "output"
 
     input:
     path seq
