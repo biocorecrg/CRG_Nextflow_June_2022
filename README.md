@@ -58,23 +58,22 @@ Knowing concepts about Linux containers is recommended.
 
 ### Day 1: Write, modify and run a complex pipeline (Jun 30)
 
-* 09:30-11:00 Decoupling params, resources and main script
-* 11:00-11:30 Coffee break
-* 11:30-13:30 Using public pipelines
+* 14:30-15:30 Decoupling params, resources and main script
+* 15:30-16:00 Coffee break
+* 16:00-17:00 Profiles and cloud
 
-### Day 2: Run a Nextflow pipeline in different environments, share and report (Jul 1)
+### Day 2: Run a Nextflow pipeline in different environments (Jul 1)
 
 * 09:30-11:00 Profiles and cloud
 * 11:00-11:30 Coffee break
 * 11:30-13:30 Modules and Tower
 
-### Day 2: nf-core (Jul 1)
+### Day 2: Nextflow modules and Tower
+* 14:30-15:30 Modules
+* 15:30-16:00 Coffee break
+* 16:00-17:00 Tower
 
-* 09:30-10:30 Introduction to nf-core (TBC)
-* 10:30-11:00 nf-core for users I (TBC)
-* 11:00-11:30 Coffee break (TBC)
-* 11:30-12:30 nf-core for users II (TBC)
-* 12:30-13:30 nf-core for developers (TBC)
+
 
 ## Acknowledgements
 
