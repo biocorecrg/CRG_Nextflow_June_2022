@@ -131,50 +131,6 @@ Optimize the previus pipeline to avoid running the process **splitSequences** tw
 |
 
 
-Directives
-------------
-
-
-The `directives <https://www.nextflow.io/docs/latest/process.html#directives>`__ are declaration blocks that can provide optional settings for a process.
-
-
-For example, they can affect the way a process stages in and out the input and output files (`stageInMode <https://www.nextflow.io/docs/latest/process.html#stageinmode>`__ and `stageOutMode <https://www.nextflow.io/docs/latest/process.html#stageoutmode>`__), or they can indicate which file has to be considered a final result and in which folder it should be published (`publishDir <https://www.nextflow.io/docs/latest/process.html#publishdir>`__).
-
-We can add the directive `publishDir <https://www.nextflow.io/docs/latest/process.html#publishdir>`__ to our previous example:
-
-.. literalinclude:: ../nextflow/test1/test1_c.nf
-   :language: groovy
-   :emphasize-lines: 37
-
-
-The script name with this modification is **test1_c.nf**.
-
-We can also use `storeDir <https://www.nextflow.io/docs/latest/process.html#storedir>`__ in case we want to have a permanent cache.
-
-The process is executed only if the output files do not exist in the folder specified by **storeDir**.
-
-When the output files exist, the process execution is skipped and these files are used as the actual process result.
-
-We can also indicate what to do if a process fails.
-
-The default is to stop the pipeline and to raise an error. But we can also skip the process using the `errorStrategy <https://www.nextflow.io/docs/latest/process.html#errorstrategy>`__ directive:
-
-.. code-block:: groovy
-
-	errorStrategy 'ignore'
-
-
-or retry a number of times changing the available memory or the maximum execution time, using the foolowing directives:
-
-
-.. code-block:: groovy
-
-	memory { 1.GB * task.attempt }
-	time { 1.hour * task.attempt }
-	errorStrategy 'retry'
-	maxRetries 3
-
-
 Resuming a pipeline
 ---------------------
 
@@ -233,6 +189,61 @@ Nextflow's cache can be disabled for a specific process by setting the directive
 
 
 **IMPORTANT: On some shared file systems you might have inconsistent file timestamps. Thus cache lenient prevents you from unwanted restarting of cached processes.**
+
+
+Directives
+------------
+
+The `directives <https://www.nextflow.io/docs/latest/process.html#directives>`__ are declaration blocks that can provide optional settings for a process.
+
+
+For example, they can affect the way a process stages in and out the input and output files (`stageInMode <https://www.nextflow.io/docs/latest/process.html#stageinmode>`__ and `stageOutMode <https://www.nextflow.io/docs/latest/process.html#stageoutmode>`__),  or specify a particular resource such as the number of `cpus <https://www.nextflow.io/docs/latest/process.html#cpus>`__ , the `memory <https://www.nextflow.io/docs/latest/process.html#memory>`__, and the `time  <https://www.nextflow.io/docs/latest/process.html#time>`__ 
+
+Here an example:
+
+.. code-block:: groovy
+
+	process my_process {
+	    time '1h'
+	    memory '2 GB'
+	    cpus 8
+
+	    """
+	    Some execution
+	    """
+	}
+
+
+We can also indicate what to do if a process fails.
+
+The default is to stop the pipeline and to raise an error. But we can also skip the process using the `errorStrategy <https://www.nextflow.io/docs/latest/process.html#errorstrategy>`__ directive:
+
+.. code-block:: groovy
+
+	process my_process {
+	    time '1h'
+	    memory '2 GB'
+	    cpus 8
+	    errorStrategy 'ignore'
+
+	    """
+	    Some execution
+	    """
+	}
+
+
+or retry a number of times changing the available memory or the maximum execution time, using the foolowing directives:
+
+
+.. code-block:: groovy
+
+	process my_process {
+	    memory { 1.GB * task.attempt }
+	    time { 1.hour * task.attempt }
+	    errorStrategy 'retry'
+	    maxRetries 3
+	}
+
 
 EXERCISE
 ---------
@@ -316,8 +327,8 @@ Then we specify resources needed for a class of processes labeled **bigmem** (i.
 .. code-block:: groovy
 
 	withLabel: 'bigmem' {
-		memory='0.7G'
-		cpus='1'
+	    memory='0.7G'
+	    cpus='1'
 	}
 
 In the script **/test2/test2.nf file**, there are two processes to run two programs:
@@ -452,7 +463,7 @@ We observe that Docker runs as "root". This can be problematic and generates sec
 This will tell Nextflow that if it is run with Docker, it has to produce files that belong to a user rather than the root.
 
 Publishing final results
-========================
+-------------------------
 
 The script **test2.nf** generates two new folders, **output_fastqc** and **output_multiQC**, that contain the result of the pipeline output.
 We can indicate which process and output can be considered the final output of the pipeline using the **publishDir** directive that has to be specified at the beginning of a process.
