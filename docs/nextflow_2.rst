@@ -1,3 +1,10 @@
+.. _nextflow_2-page:
+
+*******************
+Nextflow 2
+*******************
+
+
 More complex scripts
 ============
 
