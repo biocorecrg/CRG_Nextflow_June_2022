@@ -52,7 +52,6 @@ process reverseSequence {
     // during the execution prints the indicated variable for follow-up
     tag { "${seq}" }  					
     publishDir "output"
-    errorStrategy 'ignore'
 
     input:
     path seq 
