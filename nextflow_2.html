@@ -1326,7 +1326,7 @@ We can indicate which process and output can be considered the final output of t
 <span class="w">    </span><span class="n">path</span><span class="w"> </span><span class="n">reads</span><span class="w">   							</span><span class="c1">// it defines the input of the process. It sets values from a channel</span><span class="w"></span>
 
 <span class="w">    </span><span class="nl">output:</span><span class="w">									</span><span class="c1">// It defines the output of the process (i.e. files) and send to a new channel</span><span class="w"></span>
-<span class="w">   	</span><span class="n">path</span><span class="w"> </span><span class="s2">&quot;*_fastqc.*&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="n">path</span><span class="w"> </span><span class="s2">&quot;*_fastqc.*&quot;</span><span class="w"></span>
 
 <span class="w">    </span><span class="nl">script:</span><span class="w">									</span><span class="c1">// here you have the execution of the script / program. Basically is the command line</span><span class="w"></span>
 <span class="w">    </span><span class="s2">&quot;&quot;&quot;</span>
@@ -1349,7 +1349,7 @@ We can indicate which process and output can be considered the final output of t
 
 <span class="w">    </span><span class="nl">script:</span><span class="w"></span>
 <span class="w">    </span><span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">    multiqc .</span>
+<span class="s2">       multiqc .</span>
 <span class="s2">    &quot;&quot;&quot;</span><span class="w"></span>
 <span class="o">}</span><span class="w"></span>
 

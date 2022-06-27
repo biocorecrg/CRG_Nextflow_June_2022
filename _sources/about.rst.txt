@@ -135,7 +135,7 @@ Day 2: Run a Nextflow pipeline in different environments (Jul 1)
 Day 2: Nextflow modules and Tower
 -------------
 
-* 14:30-15:30 
+* 14:30-15:30 Modules
 * 15:30-16:00 Coffee break
-* 16:00-17:00 Modules and Tower
+* 16:00-17:00 Tower
 
