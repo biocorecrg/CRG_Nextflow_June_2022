@@ -36,7 +36,6 @@ process splitSequences {
 
     tag { "${seq}" }
 
-    publishDir "output"
     errorStrategy 'ignore'
 
     input:
