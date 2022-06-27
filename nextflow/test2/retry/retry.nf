@@ -69,7 +69,7 @@ process fastQC {
     path reads   							// it defines the input of the process. It sets values from a channel
 
     output:									// It defines the output of the process (i.e. files) and send to a new channel
-   	path "*_fastqc.*"
+    path "*_fastqc.*"
 
     script:									// here you have the execution of the script / program. Basically is the command line
     """
@@ -92,7 +92,7 @@ process multiQC {
 
     script:
     """
-    multiqc .
+       multiqc .
     """
 }
 
