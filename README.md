@@ -44,7 +44,7 @@ Knowing concepts about Linux containers is recommended.
 
 ## Dates, time, location
 
-* Dates: 30th May until 3rd June 2022 and additionaly 7th of June 2022. Time: 9:30 - 13:30h (CET)
+* Dates: 30th of June and 1st of July 2022. Time: 9:30 - 17:00h (CET)
 
 * Location: virtual, via Zoom.
 
