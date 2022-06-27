@@ -19,12 +19,11 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Courses@CRG: Reproducible research and data analysis using Containers & Nextflow 2022'
+project = u'Courses@CRG: Nextflow June 2022'
 copyright = u'2022, CRG'
 author = u'Luca Cozzuto'
 author = u'Julia Ponomarenko'
 author = u'Toni Hermoso'
-author = u'José-Antonio Espinosa'
 
 # The short X.Y version
 version = u''
