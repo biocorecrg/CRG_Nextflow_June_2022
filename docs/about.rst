@@ -101,39 +101,41 @@ Suggested program
 ============
 
 
-.. _home-page-day1:
+.. _nextflow_1-page:
 
 Day 1: Understand and run a basic Nexflow pipeline (June 30)
 -------------
 
 * 09:30-11:00 Introduction to Nextflow
 * 11:00-11:30 Coffee break
-* 11:30-13:30 Making simple scripts
+* 11:30-13:30 Making simple scripts: channels operators and workflows
 
-.. _home-page-day2:
+.. _nextflow_2-page:
 
 Day 1: Write, modify and run a complex pipeline (Jun 30)
 -------------
 
-* 14:30-15:30 More complex scripts
+* 14:30-15:30 More complex scripts: Directive and resuming
 * 15:30-16:00 Coffee break
-* 16:00-17:00 Decoupling params, resources and main script
+* 16:00-17:00 Decoupling resources, parameters and main script
 
-.. _home-page-day3:
+
+
+.. _nextflow_3-page:
 
 Day 2: Run a Nextflow pipeline in different environments (Jul 1)
 -------------
 
-* 09:30-11:00 Profiles and cloud
+* 09:30-11:00 Singularity and more processes.
 * 11:00-11:30 Coffee break
-* 11:30-13:30 Modules and Tower
+* 11:30-13:30 Profiles and cloud
 
-.. _home-page-day4:
+.. _nextflow_4-page:
 
 Day 2: Nextflow modules and Tower
 -------------
 
-* 14:30-15:30 Modules
+* 14:30-15:30 
 * 15:30-16:00 Coffee break
-* 16:00-17:00 Tower
+* 16:00-17:00 Modules and Tower
 
