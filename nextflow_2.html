@@ -612,15 +612,15 @@ This avoids clashes, and each process is isolated from the other.</p>
 <span class="s2">    &quot;&quot;&quot;</span><span class="w"></span>
 <span class="o">}</span><span class="w"></span>
 
-<span class="n">workflow</span><span class="w"> </span><span class="n">flow1</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="w">    </span><span class="nl">take:</span><span class="w"> </span><span class="n">sequences</span><span class="w"></span>
-<span class="hll">
+<span class="hll"><span class="n">workflow</span><span class="w"> </span><span class="n">flow1</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+</span><span class="hll"><span class="w">    </span><span class="nl">take:</span><span class="w"> </span><span class="n">sequences</span><span class="w"></span>
+</span><span class="hll">
 </span><span class="hll"><span class="w">    </span><span class="nl">main:</span><span class="w"></span>
 </span><span class="hll"><span class="w">    </span><span class="n">splitSequences</span><span class="o">(</span><span class="n">sequences</span><span class="o">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">reverseSequence</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">view</span><span class="o">()</span><span class="w"></span>
 </span><span class="hll"><span class="o">}</span><span class="w"></span>
-</span><span class="hll">
-</span><span class="hll"><span class="n">workflow</span><span class="w"> </span><span class="n">flow2</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-</span><span class="w">    </span><span class="nl">take:</span><span class="w"> </span><span class="n">sequences</span><span class="w"></span>
+</span>
+<span class="n">workflow</span><span class="w"> </span><span class="n">flow2</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">    </span><span class="nl">take:</span><span class="w"> </span><span class="n">sequences</span><span class="w"></span>
 
 <span class="w">    </span><span class="nl">main:</span><span class="w"></span>
 <span class="w">    </span><span class="n">splitted_seq</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="n">splitSequences</span><span class="o">(</span><span class="n">sequences</span><span class="o">).</span><span class="na">flatten</span><span class="o">()</span><span class="w"></span>
@@ -1320,8 +1320,8 @@ We can indicate which process and output can be considered the final output of t
 <span class="n">process</span><span class="w"> </span><span class="n">fastQC</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">publishDir</span><span class="w"> </span><span class="n">fastqcOutputFolder</span><span class="w">  			</span><span class="c1">// where (and whether) to publish the results</span><span class="w"></span>
 <span class="w">    </span><span class="n">tag</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="s2">&quot;${reads}&quot;</span><span class="w"> </span><span class="o">}</span><span class="w">  							</span><span class="c1">// during the execution prints the indicated variable for follow-up</span><span class="w"></span>
-<span class="w">    </span><span class="n">label</span><span class="w"> </span><span class="s1">&#39;keep_trying&#39;</span><span class="w"></span>
-
+<span class="hll"><span class="w">    </span><span class="n">label</span><span class="w"> </span><span class="s1">&#39;keep_trying&#39;</span><span class="w"></span>
+</span>
 <span class="w">    </span><span class="nl">input:</span><span class="w"></span>
 <span class="w">    </span><span class="n">path</span><span class="w"> </span><span class="n">reads</span><span class="w">   							</span><span class="c1">// it defines the input of the process. It sets values from a channel</span><span class="w"></span>
 
@@ -1339,8 +1339,8 @@ We can indicate which process and output can be considered the final output of t
 <span class="cm"> * Process 2. Run multiQC on fastQC results</span>
 <span class="cm"> */</span><span class="w"></span>
 <span class="n">process</span><span class="w"> </span><span class="n">multiQC</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="hll"><span class="w">    </span><span class="n">publishDir</span><span class="w"> </span><span class="n">multiqcOutputFolder</span><span class="o">,</span><span class="w"> </span><span class="nl">mode:</span><span class="w"> </span><span class="s1">&#39;copy&#39;</span><span class="w"> 	</span><span class="c1">// this time do not link but copy the output file</span><span class="w"></span>
-</span>
+<span class="w">    </span><span class="n">publishDir</span><span class="w"> </span><span class="n">multiqcOutputFolder</span><span class="o">,</span><span class="w"> </span><span class="nl">mode:</span><span class="w"> </span><span class="s1">&#39;copy&#39;</span><span class="w"> 	</span><span class="c1">// this time do not link but copy the output file</span><span class="w"></span>
+
 <span class="w">    </span><span class="nl">input:</span><span class="w"></span>
 <span class="w">    </span><span class="n">path</span><span class="w"> </span><span class="o">(</span><span class="n">inputfiles</span><span class="o">)</span><span class="w"></span>
 

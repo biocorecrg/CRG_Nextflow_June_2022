@@ -287,7 +287,7 @@ The solution is at **sol4.nf**. Here is the change:
 
 .. literalinclude:: ../nextflow/test1/sol4.nf
    :language: groovy
-   :emphasize-lines: 51-56
+   :emphasize-lines: 49-54
 
 
 
@@ -583,7 +583,7 @@ The code should become:
 
 .. literalinclude:: ../nextflow/test2/retry/retry.nf
    :language: groovy
-   :emphasize-lines: 85
+   :emphasize-lines: 66
 
 
 
