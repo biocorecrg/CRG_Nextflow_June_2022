@@ -19,8 +19,6 @@ This slow-paced hands-on course is designed for absolute beginners who want to s
 .. |toni| image:: images/thermoso.jpg
   :alt: Alternative text
   
-.. |jespi| image:: images/jespinosa.jpg
-  :alt: Alternative text
 
 .. |julia| image:: images/jponomarenko.jpg
   :alt: Alternative text
@@ -28,16 +26,14 @@ This slow-paced hands-on course is designed for absolute beginners who want to s
 
 
 .. list-table:: Main instructors:
-   :widths: 50 50 50 50
+   :widths: 50 50 50
    :header-rows: 1
 
    * - Luca Cozzuto
      - Toni Hermoso
-     - Jose Espinosa-Carrasco
      - Julia Ponomarenko
    * - |luca|
      - |toni|
-     - |jespi|
      - |julia|
 
 .. _home-page-outline:
@@ -91,12 +87,12 @@ Having a `GitHub account <https://github.com/join>`_ is recommended.
 Dates, time, location
 ============
 
-* Dates: Monday May 30 - Friday June 3, 2022. Tuesday June 7, 2022
+* Dates: Jun 30 - July 1, 2022.
 
-* 9:30 - 13:30 **CET**
+* 9:30 - 17:00 **CET**
 
 
-* Location: virtual, via Zoom.
+* Location: CRG training room.
 
 .. _home-page-program:
 
@@ -105,58 +101,52 @@ Suggested program
 ============
 
 
+
+### 
+
+
+### Day 2: Nextflow modules and Tower
+* 14:30-15:30 Modules
+* 15:30-16:00 Coffee break
+* 16:00-17:00 Tower
+
+
+
+
+
 .. _home-page-day1:
 
-Day 1: Introduction to Linux containers and Docker (May 30)
--------------
-
-* 09:30-11:00 Introduction to containers and Docker
-* 11:00-11:30 Break
-* 11:30-13:30 Docker
-
-.. _home-page-day2:
-
-Day 2: Docker and Singularity (May 31)
--------------
-
-* 09:30-11:00 More advanced Docker
-* 11:00-11:30 Coffee break
-* 11:30-13:30 Singularity
-
-.. _home-page-day3:
-
-Day 3: Understand and run a basic Nexflow pipeline (June 1)
+Day 1: Understand and run a basic Nexflow pipeline (June 30)
 -------------
 
 * 09:30-11:00 Introduction to Nextflow
 * 11:00-11:30 Coffee break
 * 11:30-13:30 Making simple scripts
 
-.. _home-page-day4:
+.. _home-page-day2:
 
-Day 4: Write, modify and run a complex pipeline (June 2)
+Day 1: Write, modify and run a complex pipeline (Jun 30)
 -------------
 
-* 09:30-11:00 Decoupling params, resources and main script
-* 11:00-11:30 Coffee break
-* 11:30-13:30 Using public pipelines
+* 14:30-15:30 Decoupling params, resources and main script
+* 15:30-16:00 Coffee break
+* 16:00-17:00 Profiles and cloud
 
-.. _home-page-day5:
+.. _home-page-day3:
 
-Day 5: Run a Nextflow pipeline in different environments, share and report (June 3)
+Day 2: Run a Nextflow pipeline in different environments (Jul 1)
 -------------
 
 * 09:30-11:00 Profiles and cloud
 * 11:00-11:30 Coffee break
 * 11:30-13:30 Modules and Tower
 
-.. _home-page-day6:
+.. _home-page-day4:
 
-Day 6: nf-core (June 7)
+Day 2: Nextflow modules and Tower
 -------------
 
-* 09:30-10:30 Introduction to nf-core (TBC)
-* 10:30-11:00 nf-core for users I (TBC)
-* 11:00-11:30 Coffee break (TBC)
-* 11:30-12:30 nf-core for users II (TBC)
-* 12:30-13:30 nf-core for developers (TBC)
+* 14:30-15:30 Modules
+* 15:30-16:00 Coffee break
+* 16:00-17:00 Tower
+
