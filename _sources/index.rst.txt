@@ -13,7 +13,6 @@ Contents:
    :maxdepth: 1
 
    about
-   singularity
    nextflow_1
    nextflow_2
    nextflow_3
