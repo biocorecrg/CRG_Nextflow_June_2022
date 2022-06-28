@@ -56,8 +56,6 @@ The course will be fully virtual via the `Zoom <https://zoom.us/>`_ platform. Th
 Learning objectives
 ============
 
-* Locate and fetch Docker/Singularity images from dedicated repositories.
-* Execute/Run a Docker/Singularity container from the command line.
 * Locate and fetch Nextflow pipelines from dedicated repositories.
 * Execute/Run a Nextflow pipeline.
 * Describe and explain Nextflow basic concepts.
