@@ -1,7 +1,6 @@
-# CRG_course_nextflow_Jun_2022
+# CRG Internal Course: Nextflow June 2022
 
 Reproducible research and data analysis using Nextflow
-
 
 
 ## About the course
