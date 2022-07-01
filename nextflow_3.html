@@ -1206,10 +1206,13 @@ This is mandatory when running Nextflow on the cloud.</p>
 <span class="o">}</span><span class="w"></span>
 
 <span class="n">workflow</span><span class="w"> </span><span class="n">flow1</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="w">    </span><span class="nl">take:</span><span class="w"> </span><span class="n">reads</span><span class="w"></span>
+<span class="w">    </span><span class="nl">take:</span><span class="w"> </span>
+<span class="w">    </span><span class="n">reads</span><span class="w"></span>
+<span class="w">    </span><span class="n">ref</span><span class="w"></span>
+<span class="w">    </span>
 <span class="w">    </span><span class="nl">main:</span><span class="w"></span>
 <span class="w">	</span><span class="n">fastqc_out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fastQC</span><span class="o">(</span><span class="n">reads</span><span class="o">)</span><span class="w"></span>
-<span class="w">	</span><span class="n">bowtie_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bowtieIdx</span><span class="o">(</span><span class="n">reference</span><span class="o">)</span><span class="w"></span>
+<span class="w">	</span><span class="n">bowtie_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bowtieIdx</span><span class="o">(</span><span class="n">ref</span><span class="o">)</span><span class="w"></span>
 <span class="w">	</span><span class="n">bowtieAln</span><span class="o">(</span><span class="n">bowtie_index</span><span class="o">,</span><span class="w"> </span><span class="n">reads</span><span class="o">)</span><span class="w"></span>
 <span class="w">	</span><span class="nl">emit:</span><span class="w"></span>
 <span class="w">	</span><span class="n">sam</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bowtieAln</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">samples_sam</span><span class="w"></span>
@@ -1227,7 +1230,7 @@ This is mandatory when running Nextflow on the cloud.</p>
 <span class="o">}</span><span class="w"></span>
 
 <span class="n">workflow</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">flow1</span><span class="o">(</span><span class="n">reads</span><span class="o">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">flow1</span><span class="o">(</span><span class="n">reads</span><span class="o">,</span><span class="w"> </span><span class="n">reference</span><span class="o">)</span><span class="w"></span>
 <span class="w">    </span><span class="n">flow2</span><span class="o">(</span><span class="n">flow1</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">sam</span><span class="o">)</span><span class="w"></span>
 <span class="w"> 	</span><span class="n">multiQC</span><span class="o">(</span><span class="n">multiconf</span><span class="o">,</span><span class="w"> </span><span class="n">flow1</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">fastqc_out</span><span class="o">.</span><span class="na">mix</span><span class="o">(</span><span class="n">flow1</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">logs</span><span class="o">).</span><span class="na">mix</span><span class="o">(</span><span class="n">flow2</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">fastqc_out2</span><span class="o">).</span><span class="na">collect</span><span class="o">())</span><span class="w"></span>
 <span class="o">}</span><span class="w"></span>
