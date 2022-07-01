@@ -142,10 +142,13 @@ process multiQC {
 }
 
 workflow flow1 {
-    take: reads
+    take: 
+    reads
+    ref
+    
     main:
 	fastqc_out = fastQC(reads)
-	bowtie_index = bowtieIdx(reference)
+	bowtie_index = bowtieIdx(ref)
 	bowtieAln(bowtie_index, reads)
 	emit:
 	sam = bowtieAln.out.samples_sam
@@ -163,7 +166,7 @@ workflow flow2 {
 }
 
 workflow {
-    flow1(reads)
+    flow1(reads, reference)
     flow2(flow1.out.sam)
  	multiQC(multiconf, flow1.out.fastqc_out.mix(flow1.out.logs).mix(flow2.out.fastqc_out2).collect())
 }
