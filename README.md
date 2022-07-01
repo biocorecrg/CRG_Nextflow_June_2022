@@ -3,6 +3,7 @@
 Reproducible research and data analysis using Nextflow
 
 
+
 ## About the course
 
 This slow-paced hands-on course is designed for absolute beginners who want to start using [Nextflow](https://www.nextflow.io) to achieve reproducibility of data analysis. 
