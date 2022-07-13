@@ -17,3 +17,4 @@ Contents:
    nextflow_2
    nextflow_3
    nextflow_4
+   nextflow_5
